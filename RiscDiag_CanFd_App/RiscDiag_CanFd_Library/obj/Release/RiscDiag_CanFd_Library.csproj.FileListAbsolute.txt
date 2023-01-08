@@ -1,0 +1,12 @@
+C:\Users\cosmi\RiscDiag_CanFd\RiscDiag_CanFd_App\RiscDiag_CanFd_Library\bin\Release\RiscDiag_CanFd_Library.dll
+C:\Users\cosmi\RiscDiag_CanFd\RiscDiag_CanFd_App\RiscDiag_CanFd_Library\bin\Release\RiscDiag_CanFd_Library.pdb
+C:\Users\cosmi\RiscDiag_CanFd\RiscDiag_CanFd_App\RiscDiag_CanFd_Library\obj\Release\RiscDiag_CanFd_Library.csproj.AssemblyReference.cache
+C:\Users\cosmi\RiscDiag_CanFd\RiscDiag_CanFd_App\RiscDiag_CanFd_Library\obj\Release\RiscDiag_CanFd_Library.csproj.CoreCompileInputs.cache
+C:\Users\cosmi\RiscDiag_CanFd\RiscDiag_CanFd_App\RiscDiag_CanFd_Library\obj\Release\RiscDiag_CanFd_Library.dll
+C:\Users\cosmi\RiscDiag_CanFd\RiscDiag_CanFd_App\RiscDiag_CanFd_Library\obj\Release\RiscDiag_CanFd_Library.pdb
+C:\Users\cosmi\RiscDiag_CanFd_Repo\RiscDiag_CanFd_App\RiscDiag_CanFd_Library\bin\Release\RiscDiag_CanFd_Library.dll
+C:\Users\cosmi\RiscDiag_CanFd_Repo\RiscDiag_CanFd_App\RiscDiag_CanFd_Library\bin\Release\RiscDiag_CanFd_Library.pdb
+C:\Users\cosmi\RiscDiag_CanFd_Repo\RiscDiag_CanFd_App\RiscDiag_CanFd_Library\obj\Release\RiscDiag_CanFd_Library.csproj.AssemblyReference.cache
+C:\Users\cosmi\RiscDiag_CanFd_Repo\RiscDiag_CanFd_App\RiscDiag_CanFd_Library\obj\Release\RiscDiag_CanFd_Library.csproj.CoreCompileInputs.cache
+C:\Users\cosmi\RiscDiag_CanFd_Repo\RiscDiag_CanFd_App\RiscDiag_CanFd_Library\obj\Release\RiscDiag_CanFd_Library.dll
+C:\Users\cosmi\RiscDiag_CanFd_Repo\RiscDiag_CanFd_App\RiscDiag_CanFd_Library\obj\Release\RiscDiag_CanFd_Library.pdb

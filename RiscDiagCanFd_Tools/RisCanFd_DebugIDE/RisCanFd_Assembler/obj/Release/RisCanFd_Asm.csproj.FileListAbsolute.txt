@@ -1,0 +1,12 @@
+C:\Users\Cosmin\Documents\Dizertatie_220507\Dizertatie\RisCanFd_DebugIDE\RisCanFd_Assembler\bin\Release\RisCanFd_Assembler.dll
+C:\Users\Cosmin\Documents\Dizertatie_220507\Dizertatie\RisCanFd_DebugIDE\RisCanFd_Assembler\bin\Release\RisCanFd_Assembler.pdb
+C:\Users\Cosmin\Documents\Dizertatie_220507\Dizertatie\RisCanFd_DebugIDE\RisCanFd_Assembler\obj\Release\RisCanFd_Asm.csproj.AssemblyReference.cache
+C:\Users\Cosmin\Documents\Dizertatie_220507\Dizertatie\RisCanFd_DebugIDE\RisCanFd_Assembler\obj\Release\RisCanFd_Asm.csproj.CoreCompileInputs.cache
+C:\Users\Cosmin\Documents\Dizertatie_220507\Dizertatie\RisCanFd_DebugIDE\RisCanFd_Assembler\obj\Release\RisCanFd_Assembler.dll
+C:\Users\Cosmin\Documents\Dizertatie_220507\Dizertatie\RisCanFd_DebugIDE\RisCanFd_Assembler\obj\Release\RisCanFd_Assembler.pdb
+C:\Users\cosmi\RiscDiag_CanFd_Repo\Tools\RisCanFd_DebugIDE\RisCanFd_Assembler\bin\Release\RisCanFd_Assembler.dll
+C:\Users\cosmi\RiscDiag_CanFd_Repo\Tools\RisCanFd_DebugIDE\RisCanFd_Assembler\bin\Release\RisCanFd_Assembler.pdb
+C:\Users\cosmi\RiscDiag_CanFd_Repo\Tools\RisCanFd_DebugIDE\RisCanFd_Assembler\obj\Release\RisCanFd_Asm.csproj.AssemblyReference.cache
+C:\Users\cosmi\RiscDiag_CanFd_Repo\Tools\RisCanFd_DebugIDE\RisCanFd_Assembler\obj\Release\RisCanFd_Asm.csproj.CoreCompileInputs.cache
+C:\Users\cosmi\RiscDiag_CanFd_Repo\Tools\RisCanFd_DebugIDE\RisCanFd_Assembler\obj\Release\RisCanFd_Assembler.dll
+C:\Users\cosmi\RiscDiag_CanFd_Repo\Tools\RisCanFd_DebugIDE\RisCanFd_Assembler\obj\Release\RisCanFd_Assembler.pdb

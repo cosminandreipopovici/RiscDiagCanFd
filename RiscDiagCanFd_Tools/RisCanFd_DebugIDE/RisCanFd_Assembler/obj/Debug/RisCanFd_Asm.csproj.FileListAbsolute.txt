@@ -1,0 +1,6 @@
+C:\Users\cosmi\RiscDiag_CanFd_Repo\Tools\RisCanFd_DebugIDE\RisCanFd_Assembler\bin\Debug\RisCanFd_Assembler.dll
+C:\Users\cosmi\RiscDiag_CanFd_Repo\Tools\RisCanFd_DebugIDE\RisCanFd_Assembler\bin\Debug\RisCanFd_Assembler.pdb
+C:\Users\cosmi\RiscDiag_CanFd_Repo\Tools\RisCanFd_DebugIDE\RisCanFd_Assembler\obj\Debug\RisCanFd_Asm.csproj.AssemblyReference.cache
+C:\Users\cosmi\RiscDiag_CanFd_Repo\Tools\RisCanFd_DebugIDE\RisCanFd_Assembler\obj\Debug\RisCanFd_Asm.csproj.CoreCompileInputs.cache
+C:\Users\cosmi\RiscDiag_CanFd_Repo\Tools\RisCanFd_DebugIDE\RisCanFd_Assembler\obj\Debug\RisCanFd_Assembler.dll
+C:\Users\cosmi\RiscDiag_CanFd_Repo\Tools\RisCanFd_DebugIDE\RisCanFd_Assembler\obj\Debug\RisCanFd_Assembler.pdb

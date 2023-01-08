@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiscDiag_CanFd_App", "RiscDiag_CanFd_App\RiscDiag_CanFd_App.csproj", "{9A997D38-421A-4BCB-A051-4AD292D12E04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiscDiag_CanFd_Library", "RiscDiag_CanFd_Library\RiscDiag_CanFd_Library.csproj", "{28A7058D-E0C9-402B-ABAA-D48A4652CD61}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A997D38-421A-4BCB-A051-4AD292D12E04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A997D38-421A-4BCB-A051-4AD292D12E04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A997D38-421A-4BCB-A051-4AD292D12E04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A997D38-421A-4BCB-A051-4AD292D12E04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28A7058D-E0C9-402B-ABAA-D48A4652CD61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28A7058D-E0C9-402B-ABAA-D48A4652CD61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28A7058D-E0C9-402B-ABAA-D48A4652CD61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28A7058D-E0C9-402B-ABAA-D48A4652CD61}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {51FC88BD-F6A3-4D9A-B4AB-18F989031F9E}
+	EndGlobalSection
+EndGlobal

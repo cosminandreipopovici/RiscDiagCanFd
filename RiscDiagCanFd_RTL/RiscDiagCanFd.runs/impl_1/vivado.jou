@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sun Dec 11 20:23:37 2022
+# Process ID: 2288
+# Current directory: C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.runs/impl_1
+# Command line: vivado.exe -log RiscDiag_CanFd.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source RiscDiag_CanFd.tcl -notrace
+# Log file: C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.runs/impl_1/RiscDiag_CanFd.vdi
+# Journal file: C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.runs/impl_1\vivado.jou
+# Running On: DESKTOP-SIDF053, OS: Windows, CPU Frequency: 2803 MHz, CPU Physical cores: 4, Host memory: 34047 MB
+#-----------------------------------------------------------
+source RiscDiag_CanFd.tcl -notrace

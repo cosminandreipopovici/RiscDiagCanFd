@@ -1,0 +1,1571 @@
+
+*** Running vivado
+    with args -log RiscDiag_CanFd.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source RiscDiag_CanFd.tcl
+
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source RiscDiag_CanFd.tcl -notrace
+Command: synth_design -top RiscDiag_CanFd -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10476
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'uart_rx' with formal parameter declaration list [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/UART_Debug/uart_rx.v:45]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'uart_rx' with formal parameter declaration list [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/UART_Debug/uart_rx.v:46]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'uart_rx' with formal parameter declaration list [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/UART_Debug/uart_rx.v:47]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'uart_rx' with formal parameter declaration list [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/UART_Debug/uart_rx.v:48]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'uart_rx' with formal parameter declaration list [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/UART_Debug/uart_rx.v:49]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'uart_tx' with formal parameter declaration list [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/UART_Debug/uart_tx.v:26]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'uart_tx' with formal parameter declaration list [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/UART_Debug/uart_tx.v:27]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'uart_tx' with formal parameter declaration list [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/UART_Debug/uart_tx.v:28]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'uart_tx' with formal parameter declaration list [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/UART_Debug/uart_tx.v:29]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'uart_tx' with formal parameter declaration list [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/UART_Debug/uart_tx.v:30]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1293.742 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'RiscDiag_CanFd' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscDiag_CanFd.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'RiscCanFdCPU' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RisCanFdCPU.vhd:46]
+	Parameter PROGRAM_ADDRESS_WIDTH bound to: 12 - type: integer 
+	Parameter DATA_ADDRESS_WIDTH bound to: 12 - type: integer 
+	Parameter CPU_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter REGISTER_FILE_ADDRESS_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'register_file' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RiscV_Modules/register_file.vhd:27]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'register_file' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RiscV_Modules/register_file.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'alu' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RiscV_Modules/alu.vhd:18]
+INFO: [Synth 8-6157] synthesizing module 'shift_module' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RiscV_Modules/shift_module.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'shift_module' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RiscV_Modules/shift_module.v:23]
+INFO: [Synth 8-256] done synthesizing module 'alu' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RiscV_Modules/alu.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'control_unit' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RiscV_Modules/control_unit.vhd:48]
+WARNING: [Synth 8-614] signal 'funct7' is read in the process but is not in the sensitivity list [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RiscV_Modules/control_unit.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'control_unit' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RiscV_Modules/control_unit.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'alu_control' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RiscV_Modules/alu_control.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'alu_control' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RiscV_Modules/alu_control.vhd:40]
+INFO: [Synth 8-6157] synthesizing module 'canfd_unit' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RiscV_Modules/canfd_unit.v:23]
+INFO: [Synth 8-638] synthesizing module 'can_top_level' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_top_level.vhd:203]
+INFO: [Synth 8-638] synthesizing module 'rst_sync' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/common_blocks/rst_sync.vhd:94]
+	Parameter G_RESET_POLARITY bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'rst_sync' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/common_blocks/rst_sync.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'memory_registers' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/memory_registers.vhd:290]
+	Parameter G_SUP_FILTA bound to: 0 - type: bool 
+	Parameter G_SUP_FILTB bound to: 0 - type: bool 
+	Parameter G_SUP_FILTC bound to: 0 - type: bool 
+	Parameter G_SUP_RANGE bound to: 0 - type: bool 
+	Parameter G_SUP_TEST_REGISTERS bound to: 1 - type: bool 
+	Parameter G_SUP_TRAFFIC_CTRS bound to: 0 - type: bool 
+	Parameter G_TXT_BUFFER_COUNT bound to: 2 - type: integer 
+	Parameter G_INT_COUNT bound to: 12 - type: integer 
+	Parameter G_TRV_CTR_WIDTH bound to: 7 - type: integer 
+	Parameter G_DEVICE_ID bound to: 16'b1100101011111101 
+	Parameter G_VERSION_MINOR bound to: 8'b00000100 
+	Parameter G_VERSION_MAJOR bound to: 8'b00000010 
+	Parameter G_TECHNOLOGY bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'clk_gate' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/common_blocks/clk_gate.vhd:99]
+	Parameter G_TECHNOLOGY bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clk_gate' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/common_blocks/clk_gate.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'control_registers_reg_map' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/control_registers_reg_map.vhd:112]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 16 - type: integer 
+	Parameter REGISTERED_READ bound to: 1 - type: bool 
+	Parameter CLEAR_READ_DATA bound to: 0 - type: bool 
+	Parameter RESET_POLARITY bound to: 1'b0 
+	Parameter SUP_FILT_A bound to: 0 - type: bool 
+	Parameter SUP_TRAFFIC_CTRS bound to: 0 - type: bool 
+	Parameter SUP_RANGE bound to: 0 - type: bool 
+	Parameter SUP_FILT_C bound to: 0 - type: bool 
+	Parameter SUP_FILT_B bound to: 0 - type: bool 
+	Parameter address_width bound to: 6 - type: integer 
+	Parameter address_entries bound to: 39 - type: integer 
+	Parameter addr_vect bound to: 234'b100110100101100100100011100010100001100000011111011110011101011100011011011010011001011000010111010110010101010100010011010010010001010000001111001110001101001100001011001010001001001000000111000110000101000100000011000010000001000000 
+	Parameter registered_out bound to: 0 - type: bool 
+	Parameter reset_polarity bound to: 1'b0 
+INFO: [Synth 8-3491] module 'address_decoder' declared at 'C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/address_decoder.vhd:41' bound to instance 'address_decoder_control_registers_comp' of component 'address_decoder' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/control_registers_reg_map.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/address_decoder.vhd:86]
+	Parameter address_width bound to: 6 - type: integer 
+	Parameter address_entries bound to: 39 - type: integer 
+	Parameter addr_vect bound to: 234'b100110100101100100100011100010100001100000011111011110011101011100011011011010011001011000010111010110010101010100010011010010010001010000001111001110001101001100001011001010001001001000000111000110000101000100000011000010000001000000 
+	Parameter registered_out bound to: 0 - type: bool 
+	Parameter reset_polarity bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/address_decoder.vhd:86]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter data_mask bound to: 16'b0000001111111111 
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter reset_value bound to: 16'b0000001000010000 
+	Parameter auto_clear bound to: 16'b0000000000000001 
+	Parameter is_lockable bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'memory_reg' declared at 'C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:41' bound to instance 'mode_reg_comp' of component 'memory_reg' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/control_registers_reg_map.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'memory_reg' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:95]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter data_mask bound to: 16'b0000001111111111 
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter reset_value bound to: 16'b0000001000010000 
+	Parameter auto_clear bound to: 16'b0000000000000001 
+	Parameter is_lockable bound to: 0 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'memory_reg' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:95]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter data_mask bound to: 16'b0000011111111111 
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter reset_value bound to: 16'b0000001000000000 
+	Parameter auto_clear bound to: 16'b0000000000000000 
+	Parameter is_lockable bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'memory_reg' declared at 'C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:41' bound to instance 'settings_reg_comp' of component 'memory_reg' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/control_registers_reg_map.vhd:170]
+INFO: [Synth 8-638] synthesizing module 'memory_reg__parameterized1' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:95]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter data_mask bound to: 16'b0000011111111111 
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter reset_value bound to: 16'b0000001000000000 
+	Parameter auto_clear bound to: 16'b0000000000000000 
+	Parameter is_lockable bound to: 0 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'memory_reg__parameterized1' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:95]
+	Parameter data_width bound to: 32 - type: integer 
+	Parameter data_mask bound to: 32'b00000000000000000000000011111110 
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter reset_value bound to: 32'b00000000000000000000000000000000 
+	Parameter auto_clear bound to: 32'b00000000000000000000000011111110 
+	Parameter is_lockable bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'memory_reg' declared at 'C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:41' bound to instance 'command_reg_comp' of component 'memory_reg' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/control_registers_reg_map.vhd:194]
+INFO: [Synth 8-638] synthesizing module 'memory_reg__parameterized3' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:95]
+	Parameter data_width bound to: 32 - type: integer 
+	Parameter data_mask bound to: 254 - type: integer 
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter reset_value bound to: 0 - type: integer 
+	Parameter auto_clear bound to: 254 - type: integer 
+	Parameter is_lockable bound to: 0 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'memory_reg__parameterized3' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:95]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter data_mask bound to: 16'b0000111111111111 
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter reset_value bound to: 16'b0000000000000000 
+	Parameter auto_clear bound to: 16'b0000111111111111 
+	Parameter is_lockable bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'memory_reg' declared at 'C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:41' bound to instance 'int_stat_reg_comp' of component 'memory_reg' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/control_registers_reg_map.vhd:218]
+INFO: [Synth 8-638] synthesizing module 'memory_reg__parameterized5' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:95]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter data_mask bound to: 16'b0000111111111111 
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter reset_value bound to: 16'b0000000000000000 
+	Parameter auto_clear bound to: 16'b0000111111111111 
+	Parameter is_lockable bound to: 0 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'memory_reg__parameterized5' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:95]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter data_mask bound to: 16'b0000111111111111 
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter reset_value bound to: 16'b0000000000000000 
+	Parameter auto_clear bound to: 16'b0000111111111111 
+	Parameter is_lockable bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'memory_reg' declared at 'C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:41' bound to instance 'int_ena_set_reg_comp' of component 'memory_reg' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/control_registers_reg_map.vhd:242]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter data_mask bound to: 16'b0000111111111111 
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter reset_value bound to: 16'b0000000000000000 
+	Parameter auto_clear bound to: 16'b0000111111111111 
+	Parameter is_lockable bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'memory_reg' declared at 'C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:41' bound to instance 'int_ena_clr_reg_comp' of component 'memory_reg' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/control_registers_reg_map.vhd:266]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter data_mask bound to: 16'b0000111111111111 
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter reset_value bound to: 16'b0000000000000000 
+	Parameter auto_clear bound to: 16'b0000111111111111 
+	Parameter is_lockable bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'memory_reg' declared at 'C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:41' bound to instance 'int_mask_set_reg_comp' of component 'memory_reg' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/control_registers_reg_map.vhd:290]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter data_mask bound to: 16'b0000111111111111 
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter reset_value bound to: 16'b0000000000000000 
+	Parameter auto_clear bound to: 16'b0000111111111111 
+	Parameter is_lockable bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'memory_reg' declared at 'C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:41' bound to instance 'int_mask_clr_reg_comp' of component 'memory_reg' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/control_registers_reg_map.vhd:314]
+	Parameter data_width bound to: 32 - type: integer 
+	Parameter data_mask bound to: 32'b11111111111111111111111111111111 
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter reset_value bound to: 32'b00010000010100001010000110000101 
+	Parameter auto_clear bound to: 32'b00000000000000000000000000000000 
+	Parameter is_lockable bound to: 1 - type: bool 
+INFO: [Synth 8-3491] module 'memory_reg' declared at 'C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:41' bound to instance 'btr_reg_comp' of component 'memory_reg' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/control_registers_reg_map.vhd:338]
+INFO: [Synth 8-638] synthesizing module 'memory_reg__parameterized7' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:95]
+	Parameter data_width bound to: 32 - type: integer 
+	Parameter data_mask bound to: -1 - type: integer 
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter reset_value bound to: 273719685 - type: integer 
+	Parameter auto_clear bound to: 0 - type: integer 
+	Parameter is_lockable bound to: 1 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'memory_reg__parameterized7' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:95]
+	Parameter data_width bound to: 32 - type: integer 
+	Parameter data_mask bound to: 32'b11111111111110111110111110111111 
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter reset_value bound to: 32'b00010000001000000110000110000011 
+	Parameter auto_clear bound to: 32'b00000000000000000000000000000000 
+	Parameter is_lockable bound to: 1 - type: bool 
+INFO: [Synth 8-3491] module 'memory_reg' declared at 'C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:41' bound to instance 'btr_fd_reg_comp' of component 'memory_reg' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/control_registers_reg_map.vhd:362]
+INFO: [Synth 8-638] synthesizing module 'memory_reg__parameterized9' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:95]
+	Parameter data_width bound to: 32 - type: integer 
+	Parameter data_mask bound to: -266305 - type: integer 
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter reset_value bound to: 270557571 - type: integer 
+	Parameter auto_clear bound to: 0 - type: integer 
+	Parameter is_lockable bound to: 1 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'memory_reg__parameterized9' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:95]
+	Parameter data_width bound to: 8 - type: integer 
+	Parameter data_mask bound to: 8'b11111111 
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter reset_value bound to: 8'b01100000 
+	Parameter auto_clear bound to: 8'b00000000 
+	Parameter is_lockable bound to: 1 - type: bool 
+INFO: [Synth 8-3491] module 'memory_reg' declared at 'C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:41' bound to instance 'ewl_reg_comp' of component 'memory_reg' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/control_registers_reg_map.vhd:386]
+INFO: [Synth 8-638] synthesizing module 'memory_reg__parameterized11' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:95]
+	Parameter data_width bound to: 8 - type: integer 
+	Parameter data_mask bound to: 8'b11111111 
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter reset_value bound to: 8'b01100000 
+	Parameter auto_clear bound to: 8'b00000000 
+	Parameter is_lockable bound to: 1 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'memory_reg__parameterized11' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:95]
+	Parameter data_width bound to: 8 - type: integer 
+	Parameter data_mask bound to: 8'b11111111 
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter reset_value bound to: 8'b10000000 
+	Parameter auto_clear bound to: 8'b00000000 
+	Parameter is_lockable bound to: 1 - type: bool 
+INFO: [Synth 8-3491] module 'memory_reg' declared at 'C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:41' bound to instance 'erp_reg_comp' of component 'memory_reg' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/control_registers_reg_map.vhd:410]
+INFO: [Synth 8-638] synthesizing module 'memory_reg__parameterized13' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:95]
+	Parameter data_width bound to: 8 - type: integer 
+	Parameter data_mask bound to: 8'b11111111 
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter reset_value bound to: 8'b10000000 
+	Parameter auto_clear bound to: 8'b00000000 
+	Parameter is_lockable bound to: 1 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'memory_reg__parameterized13' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:95]
+	Parameter data_width bound to: 32 - type: integer 
+	Parameter data_mask bound to: 32'b00000000000000000001111111111111 
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter reset_value bound to: 32'b00000000000000000000000000000000 
+	Parameter auto_clear bound to: 32'b00000000000000000001111000000000 
+	Parameter is_lockable bound to: 1 - type: bool 
+INFO: [Synth 8-3491] module 'memory_reg' declared at 'C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:41' bound to instance 'ctr_pres_reg_comp' of component 'memory_reg' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/control_registers_reg_map.vhd:434]
+INFO: [Synth 8-638] synthesizing module 'memory_reg__parameterized15' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:95]
+	Parameter data_width bound to: 32 - type: integer 
+	Parameter data_mask bound to: 8191 - type: integer 
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter reset_value bound to: 0 - type: integer 
+	Parameter auto_clear bound to: 7680 - type: integer 
+	Parameter is_lockable bound to: 1 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'memory_reg__parameterized15' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:95]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter data_mask bound to: 16'b1111111111111111 
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter reset_value bound to: 16'b0000000000001111 
+	Parameter auto_clear bound to: 16'b0000000000000000 
+	Parameter is_lockable bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'memory_reg' declared at 'C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:41' bound to instance 'filter_control_reg_comp' of component 'memory_reg' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/control_registers_reg_map.vhd:706]
+INFO: [Synth 8-638] synthesizing module 'memory_reg__parameterized17' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:95]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter data_mask bound to: 16'b1111111111111111 
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter reset_value bound to: 16'b0000000000001111 
+	Parameter auto_clear bound to: 16'b0000000000000000 
+	Parameter is_lockable bound to: 0 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'memory_reg__parameterized17' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:95]
+	Parameter data_width bound to: 8 - type: integer 
+	Parameter data_mask bound to: 8'b00000001 
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter reset_value bound to: 8'b00000000 
+	Parameter auto_clear bound to: 8'b00000000 
+	Parameter is_lockable bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'memory_reg' declared at 'C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:41' bound to instance 'rx_settings_reg_comp' of component 'memory_reg' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/control_registers_reg_map.vhd:730]
+INFO: [Synth 8-638] synthesizing module 'memory_reg__parameterized19' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:95]
+	Parameter data_width bound to: 8 - type: integer 
+	Parameter data_mask bound to: 8'b00000001 
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter reset_value bound to: 8'b00000000 
+	Parameter auto_clear bound to: 8'b00000000 
+	Parameter is_lockable bound to: 0 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'memory_reg__parameterized19' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:95]
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter data_width bound to: 32 - type: integer 
+	Parameter read_signalling bound to: 1 - type: bool 
+	Parameter write_signalling bound to: 0 - type: bool 
+	Parameter read_signalling_reg bound to: 0 - type: bool 
+	Parameter write_signalling_reg bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'access_signaller' declared at 'C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/access_signaler.vhd:40' bound to instance 'rx_data_access_signaller_comp' of component 'access_signaller' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/control_registers_reg_map.vhd:754]
+INFO: [Synth 8-638] synthesizing module 'access_signaller' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/access_signaler.vhd:90]
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter data_width bound to: 32 - type: integer 
+	Parameter read_signalling bound to: 1 - type: bool 
+	Parameter write_signalling bound to: 0 - type: bool 
+	Parameter read_signalling_reg bound to: 0 - type: bool 
+	Parameter write_signalling_reg bound to: 0 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'access_signaller' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/access_signaler.vhd:90]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter data_mask bound to: 16'b1111111100000111 
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter reset_value bound to: 16'b0000000000000000 
+	Parameter auto_clear bound to: 16'b0000000000000111 
+	Parameter is_lockable bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'memory_reg' declared at 'C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:41' bound to instance 'tx_command_reg_comp' of component 'memory_reg' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/control_registers_reg_map.vhd:778]
+INFO: [Synth 8-638] synthesizing module 'memory_reg__parameterized21' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:95]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter data_mask bound to: 16'b1111111100000111 
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter reset_value bound to: 16'b0000000000000000 
+	Parameter auto_clear bound to: 16'b0000000000000111 
+	Parameter is_lockable bound to: 0 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'memory_reg__parameterized21' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:95]
+	Parameter data_width bound to: 32 - type: integer 
+	Parameter data_mask bound to: 32'b01110111011101110111011101110111 
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter reset_value bound to: 32'b00000000000000000000000000000001 
+	Parameter auto_clear bound to: 32'b00000000000000000000000000000000 
+	Parameter is_lockable bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'memory_reg' declared at 'C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:41' bound to instance 'tx_priority_reg_comp' of component 'memory_reg' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/control_registers_reg_map.vhd:802]
+INFO: [Synth 8-638] synthesizing module 'memory_reg__parameterized23' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:95]
+	Parameter data_width bound to: 32 - type: integer 
+	Parameter data_mask bound to: 2004318071 - type: integer 
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter reset_value bound to: 1 - type: integer 
+	Parameter auto_clear bound to: 0 - type: integer 
+	Parameter is_lockable bound to: 0 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'memory_reg__parameterized23' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:95]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter data_mask bound to: 16'b0000001111111111 
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter reset_value bound to: 16'b0000000000001010 
+	Parameter auto_clear bound to: 16'b0000000000000000 
+	Parameter is_lockable bound to: 1 - type: bool 
+INFO: [Synth 8-3491] module 'memory_reg' declared at 'C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:41' bound to instance 'ssp_cfg_reg_comp' of component 'memory_reg' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/control_registers_reg_map.vhd:826]
+INFO: [Synth 8-638] synthesizing module 'memory_reg__parameterized25' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:95]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter data_mask bound to: 16'b0000001111111111 
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter reset_value bound to: 16'b0000000000001010 
+	Parameter auto_clear bound to: 16'b0000000000000000 
+	Parameter is_lockable bound to: 1 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'memory_reg__parameterized25' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:95]
+	Parameter data_out_width bound to: 32 - type: integer 
+	Parameter data_in_width bound to: 1248 - type: integer 
+	Parameter sel_width bound to: 6 - type: integer 
+	Parameter registered_out bound to: 1 - type: bool 
+	Parameter reset_polarity bound to: 1'b0 
+INFO: [Synth 8-3491] module 'data_mux' declared at 'C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/data_mux.vhd:74' bound to instance 'data_mux_control_registers_comp' of component 'data_mux' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/control_registers_reg_map.vhd:861]
+INFO: [Synth 8-638] synthesizing module 'data_mux' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/data_mux.vhd:132]
+	Parameter data_out_width bound to: 32 - type: integer 
+	Parameter data_in_width bound to: 1248 - type: integer 
+	Parameter sel_width bound to: 6 - type: integer 
+	Parameter registered_out bound to: 1 - type: bool 
+	Parameter reset_polarity bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'data_mux' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/data_mux.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'control_registers_reg_map' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/control_registers_reg_map.vhd:112]
+INFO: [Synth 8-638] synthesizing module 'test_registers_reg_map' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/test_registers_reg_map.vhd:107]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 16 - type: integer 
+	Parameter REGISTERED_READ bound to: 1 - type: bool 
+	Parameter CLEAR_READ_DATA bound to: 0 - type: bool 
+	Parameter RESET_POLARITY bound to: 1'b0 
+	Parameter address_width bound to: 6 - type: integer 
+	Parameter address_entries bound to: 4 - type: integer 
+	Parameter addr_vect bound to: 24'b000011000010000001000000 
+	Parameter registered_out bound to: 0 - type: bool 
+	Parameter reset_polarity bound to: 1'b0 
+INFO: [Synth 8-3491] module 'address_decoder' declared at 'C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/address_decoder.vhd:41' bound to instance 'address_decoder_test_registers_comp' of component 'address_decoder' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/test_registers_reg_map.vhd:121]
+INFO: [Synth 8-638] synthesizing module 'address_decoder__parameterized1' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/address_decoder.vhd:86]
+	Parameter address_width bound to: 6 - type: integer 
+	Parameter address_entries bound to: 4 - type: integer 
+	Parameter addr_vect bound to: 24'b000011000010000001000000 
+	Parameter registered_out bound to: 0 - type: bool 
+	Parameter reset_polarity bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'address_decoder__parameterized1' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/address_decoder.vhd:86]
+	Parameter data_width bound to: 32 - type: integer 
+	Parameter data_mask bound to: 32'b00000000000000000000000000000011 
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter reset_value bound to: 32'b00000000000000000000000000000000 
+	Parameter auto_clear bound to: 32'b00000000000000000000000000000010 
+	Parameter is_lockable bound to: 1 - type: bool 
+INFO: [Synth 8-3491] module 'memory_reg' declared at 'C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:41' bound to instance 'tst_control_reg_comp' of component 'memory_reg' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/test_registers_reg_map.vhd:141]
+INFO: [Synth 8-638] synthesizing module 'memory_reg__parameterized27' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:95]
+	Parameter data_width bound to: 32 - type: integer 
+	Parameter data_mask bound to: 3 - type: integer 
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter reset_value bound to: 0 - type: integer 
+	Parameter auto_clear bound to: 2 - type: integer 
+	Parameter is_lockable bound to: 1 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'memory_reg__parameterized27' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:95]
+	Parameter data_width bound to: 32 - type: integer 
+	Parameter data_mask bound to: 32'b00000000000011111111111111111111 
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter reset_value bound to: 32'b00000000000000000000000000000000 
+	Parameter auto_clear bound to: 32'b00000000000000000000000000000000 
+	Parameter is_lockable bound to: 1 - type: bool 
+INFO: [Synth 8-3491] module 'memory_reg' declared at 'C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:41' bound to instance 'tst_dest_reg_comp' of component 'memory_reg' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/test_registers_reg_map.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'memory_reg__parameterized29' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:95]
+	Parameter data_width bound to: 32 - type: integer 
+	Parameter data_mask bound to: 1048575 - type: integer 
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter reset_value bound to: 0 - type: integer 
+	Parameter auto_clear bound to: 0 - type: integer 
+	Parameter is_lockable bound to: 1 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'memory_reg__parameterized29' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:95]
+	Parameter data_width bound to: 32 - type: integer 
+	Parameter data_mask bound to: 32'b11111111111111111111111111111111 
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter reset_value bound to: 32'b00000000000000000000000000000000 
+	Parameter auto_clear bound to: 32'b00000000000000000000000000000000 
+	Parameter is_lockable bound to: 1 - type: bool 
+INFO: [Synth 8-3491] module 'memory_reg' declared at 'C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:41' bound to instance 'tst_wdata_reg_comp' of component 'memory_reg' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/test_registers_reg_map.vhd:189]
+INFO: [Synth 8-638] synthesizing module 'memory_reg__parameterized31' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:95]
+	Parameter data_width bound to: 32 - type: integer 
+	Parameter data_mask bound to: -1 - type: integer 
+	Parameter reset_polarity bound to: 1'b0 
+	Parameter reset_value bound to: 0 - type: integer 
+	Parameter auto_clear bound to: 0 - type: integer 
+	Parameter is_lockable bound to: 1 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'memory_reg__parameterized31' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:95]
+	Parameter data_out_width bound to: 32 - type: integer 
+	Parameter data_in_width bound to: 128 - type: integer 
+	Parameter sel_width bound to: 6 - type: integer 
+	Parameter registered_out bound to: 1 - type: bool 
+	Parameter reset_polarity bound to: 1'b0 
+INFO: [Synth 8-3491] module 'data_mux' declared at 'C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/data_mux.vhd:74' bound to instance 'data_mux_test_registers_comp' of component 'data_mux' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/test_registers_reg_map.vhd:224]
+INFO: [Synth 8-638] synthesizing module 'data_mux__parameterized1' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/data_mux.vhd:132]
+	Parameter data_out_width bound to: 32 - type: integer 
+	Parameter data_in_width bound to: 128 - type: integer 
+	Parameter sel_width bound to: 6 - type: integer 
+	Parameter registered_out bound to: 1 - type: bool 
+	Parameter reset_polarity bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'data_mux__parameterized1' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/data_mux.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'test_registers_reg_map' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/test_registers_reg_map.vhd:107]
+INFO: [Synth 8-256] done synthesizing module 'memory_registers' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/memory_registers.vhd:290]
+INFO: [Synth 8-638] synthesizing module 'rx_buffer' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/rx_buffer/rx_buffer.vhd:224]
+	Parameter G_RX_BUFF_SIZE bound to: 2048 - type: integer 
+	Parameter G_TECHNOLOGY bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'dff_arst' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/common_blocks/dff_arst.vhd:100]
+	Parameter G_RESET_POLARITY bound to: 1'b0 
+	Parameter G_RST_VAL bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'dff_arst' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/common_blocks/dff_arst.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'mux2' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/common_blocks/mux2.vhd:103]
+INFO: [Synth 8-256] done synthesizing module 'mux2' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/common_blocks/mux2.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'rx_buffer_fsm' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/rx_buffer/rx_buffer_fsm.vhd:147]
+INFO: [Synth 8-256] done synthesizing module 'rx_buffer_fsm' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/rx_buffer/rx_buffer_fsm.vhd:147]
+INFO: [Synth 8-638] synthesizing module 'rx_buffer_pointers' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/rx_buffer/rx_buffer_pointers.vhd:169]
+	Parameter G_RX_BUFF_SIZE bound to: 2048 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'rx_buffer_pointers' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/rx_buffer/rx_buffer_pointers.vhd:169]
+INFO: [Synth 8-226] default block is never used [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/rx_buffer/rx_buffer.vhd:605]
+INFO: [Synth 8-638] synthesizing module 'rx_buffer_ram' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/rx_buffer/rx_buffer_ram.vhd:149]
+	Parameter G_RX_BUFF_SIZE bound to: 2048 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'inf_ram_wrapper' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/common_blocks/inf_ram_wrapper.vhd:134]
+	Parameter G_RESET_POLARITY bound to: 1'b0 
+	Parameter G_WORD_WIDTH bound to: 32 - type: integer 
+	Parameter G_DEPTH bound to: 2048 - type: integer 
+	Parameter G_ADDRESS_WIDTH bound to: 12 - type: integer 
+	Parameter G_SYNC_READ bound to: 1 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'inf_ram_wrapper' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/common_blocks/inf_ram_wrapper.vhd:134]
+INFO: [Synth 8-256] done synthesizing module 'rx_buffer_ram' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/rx_buffer/rx_buffer_ram.vhd:149]
+INFO: [Synth 8-256] done synthesizing module 'rx_buffer' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/rx_buffer/rx_buffer.vhd:224]
+INFO: [Synth 8-638] synthesizing module 'txt_buffer' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/txt_buffer/txt_buffer.vhd:196]
+	Parameter G_TXT_BUFFER_COUNT bound to: 2 - type: integer 
+	Parameter G_ID bound to: 0 - type: integer 
+	Parameter G_TECHNOLOGY bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'txt_buffer_ram' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/txt_buffer/txt_buffer_ram.vhd:151]
+	Parameter G_ID bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'inf_ram_wrapper__parameterized0' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/common_blocks/inf_ram_wrapper.vhd:134]
+	Parameter G_RESET_POLARITY bound to: 1'b0 
+	Parameter G_WORD_WIDTH bound to: 32 - type: integer 
+	Parameter G_DEPTH bound to: 20 - type: integer 
+	Parameter G_ADDRESS_WIDTH bound to: 5 - type: integer 
+	Parameter G_SYNC_READ bound to: 1 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'inf_ram_wrapper__parameterized0' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/common_blocks/inf_ram_wrapper.vhd:134]
+INFO: [Synth 8-256] done synthesizing module 'txt_buffer_ram' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/txt_buffer/txt_buffer_ram.vhd:151]
+INFO: [Synth 8-638] synthesizing module 'txt_buffer_fsm' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/txt_buffer/txt_buffer_fsm.vhd:159]
+	Parameter G_ID bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'txt_buffer_fsm' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/txt_buffer/txt_buffer_fsm.vhd:159]
+INFO: [Synth 8-256] done synthesizing module 'txt_buffer' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/txt_buffer/txt_buffer.vhd:196]
+INFO: [Synth 8-638] synthesizing module 'txt_buffer__parameterized0' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/txt_buffer/txt_buffer.vhd:196]
+	Parameter G_TXT_BUFFER_COUNT bound to: 2 - type: integer 
+	Parameter G_ID bound to: 1 - type: integer 
+	Parameter G_TECHNOLOGY bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'txt_buffer_ram__parameterized0' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/txt_buffer/txt_buffer_ram.vhd:151]
+	Parameter G_ID bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'txt_buffer_ram__parameterized0' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/txt_buffer/txt_buffer_ram.vhd:151]
+INFO: [Synth 8-638] synthesizing module 'txt_buffer_fsm__parameterized0' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/txt_buffer/txt_buffer_fsm.vhd:159]
+	Parameter G_ID bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'txt_buffer_fsm__parameterized0' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/txt_buffer/txt_buffer_fsm.vhd:159]
+INFO: [Synth 8-256] done synthesizing module 'txt_buffer__parameterized0' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/txt_buffer/txt_buffer.vhd:196]
+INFO: [Synth 8-638] synthesizing module 'tx_arbitrator' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/tx_arbitrator/tx_arbitrator.vhd:186]
+	Parameter G_TXT_BUFFER_COUNT bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'priority_decoder' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/tx_arbitrator/priority_decoder.vhd:124]
+	Parameter G_TXT_BUFFER_COUNT bound to: 2 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/tx_arbitrator/priority_decoder.vhd:207]
+INFO: [Synth 8-226] default block is never used [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/tx_arbitrator/priority_decoder.vhd:207]
+INFO: [Synth 8-226] default block is never used [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/tx_arbitrator/priority_decoder.vhd:207]
+INFO: [Synth 8-226] default block is never used [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/tx_arbitrator/priority_decoder.vhd:207]
+INFO: [Synth 8-226] default block is never used [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/tx_arbitrator/priority_decoder.vhd:252]
+INFO: [Synth 8-226] default block is never used [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/tx_arbitrator/priority_decoder.vhd:252]
+INFO: [Synth 8-256] done synthesizing module 'priority_decoder' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/tx_arbitrator/priority_decoder.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'tx_arbitrator_fsm' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/tx_arbitrator/tx_arbitrator_fsm.vhd:175]
+INFO: [Synth 8-256] done synthesizing module 'tx_arbitrator_fsm' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/tx_arbitrator/tx_arbitrator_fsm.vhd:175]
+INFO: [Synth 8-256] done synthesizing module 'tx_arbitrator' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/tx_arbitrator/tx_arbitrator.vhd:186]
+INFO: [Synth 8-638] synthesizing module 'frame_filters' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/frame_filters/frame_filters.vhd:178]
+	Parameter G_SUP_FILTA bound to: 0 - type: bool 
+	Parameter G_SUP_FILTB bound to: 0 - type: bool 
+	Parameter G_SUP_FILTC bound to: 0 - type: bool 
+	Parameter G_SUP_RANGE bound to: 0 - type: bool 
+INFO: [Synth 8-226] default block is never used [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/frame_filters/frame_filters.vhd:299]
+INFO: [Synth 8-638] synthesizing module 'bit_filter' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/frame_filters/bit_filter.vhd:118]
+	Parameter G_WIDTH bound to: 29 - type: integer 
+	Parameter G_IS_PRESENT bound to: 0 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'bit_filter' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/frame_filters/bit_filter.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'range_filter' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/frame_filters/range_filter.vhd:120]
+	Parameter G_WIDTH bound to: 29 - type: integer 
+	Parameter G_IS_PRESENT bound to: 0 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'range_filter' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/frame_filters/range_filter.vhd:120]
+INFO: [Synth 8-256] done synthesizing module 'frame_filters' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/frame_filters/frame_filters.vhd:178]
+INFO: [Synth 8-638] synthesizing module 'int_manager' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/interrupt_manager/int_manager.vhd:173]
+	Parameter G_INT_COUNT bound to: 12 - type: integer 
+	Parameter G_TXT_BUFFER_COUNT bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'int_module' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/interrupt_manager/int_module.vhd:149]
+INFO: [Synth 8-256] done synthesizing module 'int_module' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/interrupt_manager/int_module.vhd:149]
+INFO: [Synth 8-256] done synthesizing module 'int_manager' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/interrupt_manager/int_manager.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'can_core' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/can_core.vhd:325]
+	Parameter G_SAMPLE_TRIGGER_COUNT bound to: 2 - type: integer 
+	Parameter G_CTRL_CTR_WIDTH bound to: 9 - type: integer 
+	Parameter G_RETR_LIM_CTR_WIDTH bound to: 4 - type: integer 
+	Parameter G_ERR_VALID_PIPELINE bound to: 1 - type: bool 
+	Parameter G_CRC15_POL bound to: 16'b1100010110011001 
+	Parameter G_CRC17_POL bound to: 20'b00110110100001011011 
+	Parameter G_CRC21_POL bound to: 24'b001100000010100010011001 
+INFO: [Synth 8-638] synthesizing module 'protocol_control' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/protocol_control.vhd:457]
+	Parameter G_CTRL_CTR_WIDTH bound to: 9 - type: integer 
+	Parameter G_RETR_LIM_CTR_WIDTH bound to: 4 - type: integer 
+	Parameter G_ERR_VALID_PIPELINE bound to: 1 - type: bool 
+INFO: [Synth 8-638] synthesizing module 'endian_swapper' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/common_blocks/endian_swapper.vhd:117]
+	Parameter G_SWAP_GEN bound to: 1 - type: bool 
+	Parameter G_WORD_SIZE bound to: 4 - type: integer 
+	Parameter G_GROUP_SIZE bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'endian_swapper' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/common_blocks/endian_swapper.vhd:117]
+INFO: [Synth 8-638] synthesizing module 'protocol_control_fsm' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/protocol_control_fsm.vhd:569]
+INFO: [Synth 8-638] synthesizing module 'dlc_decoder' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/common_blocks/dlc_decoder.vhd:104]
+INFO: [Synth 8-256] done synthesizing module 'dlc_decoder' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/common_blocks/dlc_decoder.vhd:104]
+INFO: [Synth 8-256] done synthesizing module 'protocol_control_fsm' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/protocol_control_fsm.vhd:569]
+INFO: [Synth 8-638] synthesizing module 'control_counter' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/control_counter.vhd:159]
+	Parameter G_CTRL_CTR_WIDTH bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'control_counter' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/control_counter.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'reintegration_counter' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/reintegration_counter.vhd:124]
+INFO: [Synth 8-256] done synthesizing module 'reintegration_counter' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/reintegration_counter.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'retransmitt_counter' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/retransmitt_counter.vhd:136]
+	Parameter G_RETR_LIM_CTR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'retransmitt_counter' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/retransmitt_counter.vhd:136]
+INFO: [Synth 8-638] synthesizing module 'err_detector' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/err_detector.vhd:216]
+	Parameter G_ERR_VALID_PIPELINE bound to: 1 - type: bool 
+INFO: [Synth 8-226] default block is never used [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/err_detector.vhd:294]
+INFO: [Synth 8-256] done synthesizing module 'err_detector' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/err_detector.vhd:216]
+INFO: [Synth 8-638] synthesizing module 'tx_shift_reg' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/tx_shift_reg.vhd:192]
+INFO: [Synth 8-226] default block is never used [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/tx_shift_reg.vhd:242]
+INFO: [Synth 8-638] synthesizing module 'shift_reg_preload' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/common_blocks/shift_reg_preload.vhd:122]
+	Parameter G_RESET_POLARITY bound to: 1'b0 
+	Parameter G_RESET_VALUE bound to: 32'b00000000000000000000000000000000 
+	Parameter G_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'shift_reg_preload' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/common_blocks/shift_reg_preload.vhd:122]
+INFO: [Synth 8-256] done synthesizing module 'tx_shift_reg' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/tx_shift_reg.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'rx_shift_reg' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/rx_shift_reg.vhd:208]
+INFO: [Synth 8-638] synthesizing module 'shift_reg_byte' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/common_blocks/shift_reg_byte.vhd:127]
+	Parameter G_RESET_POLARITY bound to: 1'b0 
+	Parameter G_RESET_VALUE bound to: 32'b00000000000000000000000000000000 
+	Parameter G_NUM_BYTES bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'shift_reg_byte' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/common_blocks/shift_reg_byte.vhd:127]
+INFO: [Synth 8-256] done synthesizing module 'rx_shift_reg' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/rx_shift_reg.vhd:208]
+INFO: [Synth 8-256] done synthesizing module 'protocol_control' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/protocol_control.vhd:457]
+INFO: [Synth 8-638] synthesizing module 'operation_control' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/operation_control.vhd:142]
+INFO: [Synth 8-256] done synthesizing module 'operation_control' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/operation_control.vhd:142]
+INFO: [Synth 8-638] synthesizing module 'fault_confinement' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/fault_confinement.vhd:200]
+INFO: [Synth 8-638] synthesizing module 'fault_confinement_fsm' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/fault_confinement_fsm.vhd:154]
+INFO: [Synth 8-256] done synthesizing module 'fault_confinement_fsm' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/fault_confinement_fsm.vhd:154]
+INFO: [Synth 8-638] synthesizing module 'err_counters' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/err_counters.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'err_counters' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/err_counters.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'fault_confinement_rules' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/fault_confinement_rules.vhd:152]
+INFO: [Synth 8-256] done synthesizing module 'fault_confinement_rules' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/fault_confinement_rules.vhd:152]
+INFO: [Synth 8-256] done synthesizing module 'fault_confinement' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/fault_confinement.vhd:200]
+INFO: [Synth 8-638] synthesizing module 'can_crc' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/can_crc.vhd:190]
+	Parameter G_CRC15_POL bound to: 16'b1100010110011001 
+	Parameter G_CRC17_POL bound to: 20'b00110110100001011011 
+	Parameter G_CRC21_POL bound to: 24'b001100000010100010011001 
+INFO: [Synth 8-638] synthesizing module 'crc_calc' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/crc_calc.vhd:138]
+	Parameter G_CRC_WIDTH bound to: 15 - type: integer 
+	Parameter G_POLYNOMIAL bound to: 16'b1100010110011001 
+INFO: [Synth 8-256] done synthesizing module 'crc_calc' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/crc_calc.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'crc_calc__parameterized0' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/crc_calc.vhd:138]
+	Parameter G_CRC_WIDTH bound to: 17 - type: integer 
+	Parameter G_POLYNOMIAL bound to: 20'b00110110100001011011 
+INFO: [Synth 8-256] done synthesizing module 'crc_calc__parameterized0' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/crc_calc.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'crc_calc__parameterized1' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/crc_calc.vhd:138]
+	Parameter G_CRC_WIDTH bound to: 21 - type: integer 
+	Parameter G_POLYNOMIAL bound to: 24'b001100000010100010011001 
+INFO: [Synth 8-256] done synthesizing module 'crc_calc__parameterized1' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/crc_calc.vhd:138]
+INFO: [Synth 8-256] done synthesizing module 'can_crc' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/can_crc.vhd:190]
+INFO: [Synth 8-638] synthesizing module 'bit_stuffing' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/bit_stuffing.vhd:150]
+INFO: [Synth 8-638] synthesizing module 'dff_arst_ce' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/common_blocks/dff_arst_ce.vhd:103]
+	Parameter G_RESET_POLARITY bound to: 1'b0 
+	Parameter G_RST_VAL bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'dff_arst_ce' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/common_blocks/dff_arst_ce.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'dff_arst_ce__parameterized0' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/common_blocks/dff_arst_ce.vhd:103]
+	Parameter G_RESET_POLARITY bound to: 1'b0 
+	Parameter G_RST_VAL bound to: 1'b1 
+INFO: [Synth 8-256] done synthesizing module 'dff_arst_ce__parameterized0' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/common_blocks/dff_arst_ce.vhd:103]
+INFO: [Synth 8-256] done synthesizing module 'bit_stuffing' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/bit_stuffing.vhd:150]
+INFO: [Synth 8-638] synthesizing module 'bit_destuffing' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/bit_destuffing.vhd:152]
+INFO: [Synth 8-638] synthesizing module 'dff_arst__parameterized0' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/common_blocks/dff_arst.vhd:100]
+	Parameter G_RESET_POLARITY bound to: 1'b0 
+	Parameter G_RST_VAL bound to: 1'b1 
+INFO: [Synth 8-256] done synthesizing module 'dff_arst__parameterized0' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/common_blocks/dff_arst.vhd:100]
+INFO: [Synth 8-256] done synthesizing module 'bit_destuffing' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/bit_destuffing.vhd:152]
+INFO: [Synth 8-638] synthesizing module 'bus_traffic_counters' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/bus_traffic_counters.vhd:134]
+INFO: [Synth 8-256] done synthesizing module 'bus_traffic_counters' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/bus_traffic_counters.vhd:134]
+INFO: [Synth 8-638] synthesizing module 'trigger_mux' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/trigger_mux.vhd:183]
+	Parameter G_SAMPLE_TRIGGER_COUNT bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'trigger_mux' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/trigger_mux.vhd:183]
+INFO: [Synth 8-256] done synthesizing module 'can_core' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/can_core.vhd:325]
+INFO: [Synth 8-638] synthesizing module 'prescaler' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/prescaler/prescaler.vhd:188]
+	Parameter G_TSEG1_NBT_WIDTH bound to: 8 - type: integer 
+	Parameter G_TSEG2_NBT_WIDTH bound to: 8 - type: integer 
+	Parameter G_BRP_NBT_WIDTH bound to: 8 - type: integer 
+	Parameter G_SJW_NBT_WIDTH bound to: 5 - type: integer 
+	Parameter G_TSEG1_DBT_WIDTH bound to: 8 - type: integer 
+	Parameter G_TSEG2_DBT_WIDTH bound to: 8 - type: integer 
+	Parameter G_BRP_DBT_WIDTH bound to: 8 - type: integer 
+	Parameter G_SJW_DBT_WIDTH bound to: 5 - type: integer 
+	Parameter G_SAMPLE_TRIGGER_COUNT bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'bit_time_cfg_capture' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/prescaler/bit_time_cfg_capture.vhd:170]
+	Parameter G_TSEG1_NBT_WIDTH bound to: 8 - type: integer 
+	Parameter G_TSEG2_NBT_WIDTH bound to: 8 - type: integer 
+	Parameter G_BRP_NBT_WIDTH bound to: 8 - type: integer 
+	Parameter G_SJW_NBT_WIDTH bound to: 5 - type: integer 
+	Parameter G_TSEG1_DBT_WIDTH bound to: 8 - type: integer 
+	Parameter G_TSEG2_DBT_WIDTH bound to: 8 - type: integer 
+	Parameter G_BRP_DBT_WIDTH bound to: 8 - type: integer 
+	Parameter G_SJW_DBT_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'bit_time_cfg_capture' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/prescaler/bit_time_cfg_capture.vhd:170]
+INFO: [Synth 8-638] synthesizing module 'synchronisation_checker' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/prescaler/synchronisation_checker.vhd:139]
+INFO: [Synth 8-256] done synthesizing module 'synchronisation_checker' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/prescaler/synchronisation_checker.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'bit_segment_meter' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/prescaler/bit_segment_meter.vhd:273]
+	Parameter G_SJW_WIDTH bound to: 5 - type: integer 
+	Parameter G_TSEG1_WIDTH bound to: 8 - type: integer 
+	Parameter G_TSEG2_WIDTH bound to: 8 - type: integer 
+	Parameter G_BT_WIDTH bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'bit_segment_meter' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/prescaler/bit_segment_meter.vhd:273]
+INFO: [Synth 8-638] synthesizing module 'bit_time_counters' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/prescaler/bit_time_counters.vhd:142]
+	Parameter G_BT_WIDTH bound to: 9 - type: integer 
+	Parameter G_BRP_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'bit_time_counters' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/prescaler/bit_time_counters.vhd:142]
+INFO: [Synth 8-638] synthesizing module 'segment_end_detector' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/prescaler/segment_end_detector.vhd:148]
+INFO: [Synth 8-256] done synthesizing module 'segment_end_detector' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/prescaler/segment_end_detector.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'bit_time_fsm' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/prescaler/bit_time_fsm.vhd:135]
+INFO: [Synth 8-256] done synthesizing module 'bit_time_fsm' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/prescaler/bit_time_fsm.vhd:135]
+INFO: [Synth 8-638] synthesizing module 'trigger_generator' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/prescaler/trigger_generator.vhd:157]
+	Parameter G_SAMPLE_TRIGGER_COUNT bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'trigger_generator' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/prescaler/trigger_generator.vhd:157]
+INFO: [Synth 8-256] done synthesizing module 'prescaler' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/prescaler/prescaler.vhd:188]
+INFO: [Synth 8-638] synthesizing module 'bus_sampling' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/bus_sampling/bus_sampling.vhd:200]
+	Parameter G_SSP_DELAY_SAT_VAL bound to: 255 - type: integer 
+	Parameter G_TX_CACHE_DEPTH bound to: 8 - type: integer 
+	Parameter G_TRV_CTR_WIDTH bound to: 7 - type: integer 
+	Parameter G_SSP_POS_WIDTH bound to: 8 - type: integer 
+	Parameter G_USE_SSP_SATURATION bound to: 1 - type: bool 
+	Parameter G_SSP_CTRS_WIDTH bound to: 15 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'sig_sync' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/common_blocks/sig_sync.vhd:100]
+	Parameter G_RESET_POLARITY bound to: 1'b0 
+	Parameter G_RESET_VALUE bound to: 1'b1 
+INFO: [Synth 8-256] done synthesizing module 'sig_sync' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/common_blocks/sig_sync.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'trv_delay_measurement' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/bus_sampling/trv_delay_meas.vhd:207]
+	Parameter G_TRV_CTR_WIDTH bound to: 7 - type: integer 
+	Parameter G_SSP_POS_WIDTH bound to: 8 - type: integer 
+	Parameter G_USE_SSP_SATURATION bound to: 1 - type: bool 
+	Parameter G_SSP_SATURATION_LVL bound to: 255 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'trv_delay_measurement' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/bus_sampling/trv_delay_meas.vhd:207]
+INFO: [Synth 8-638] synthesizing module 'data_edge_detector' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/bus_sampling/data_edge_detector.vhd:150]
+INFO: [Synth 8-256] done synthesizing module 'data_edge_detector' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/bus_sampling/data_edge_detector.vhd:150]
+INFO: [Synth 8-638] synthesizing module 'ssp_generator' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/bus_sampling/ssp_generator.vhd:138]
+	Parameter G_SSP_CTRS_WIDTH bound to: 15 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ssp_generator' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/bus_sampling/ssp_generator.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'tx_data_cache' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/bus_sampling/tx_data_cache.vhd:132]
+	Parameter G_TX_CACHE_DEPTH bound to: 8 - type: integer 
+	Parameter G_TX_CACHE_RST_VAL bound to: 1'b1 
+INFO: [Synth 8-256] done synthesizing module 'tx_data_cache' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/bus_sampling/tx_data_cache.vhd:132]
+INFO: [Synth 8-638] synthesizing module 'bit_err_detector' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/bus_sampling/bit_err_detector.vhd:141]
+INFO: [Synth 8-256] done synthesizing module 'bit_err_detector' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/bus_sampling/bit_err_detector.vhd:141]
+INFO: [Synth 8-638] synthesizing module 'sample_mux' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/bus_sampling/sample_mux.vhd:130]
+INFO: [Synth 8-256] done synthesizing module 'sample_mux' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/bus_sampling/sample_mux.vhd:130]
+INFO: [Synth 8-256] done synthesizing module 'bus_sampling' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/bus_sampling/bus_sampling.vhd:200]
+INFO: [Synth 8-256] done synthesizing module 'can_top_level' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_top_level.vhd:203]
+INFO: [Synth 8-6155] done synthesizing module 'canfd_unit' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RiscV_Modules/canfd_unit.v:23]
+INFO: [Synth 8-638] synthesizing module 'cfd_control' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RiscV_Modules/cfd_control.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'cfd_control' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RiscV_Modules/cfd_control.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'RiscCanFdCPU' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RisCanFdCPU.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'program_memory' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/ProgramMemory/program_memory.vhd:27]
+	Parameter ADDRESS_WIDTH bound to: 12 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'program_memory' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/ProgramMemory/program_memory.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'data_memory' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/DataMemory/data_memory.vhd:34]
+	Parameter ADDRESS_WIDTH bound to: 12 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'data_memory' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/DataMemory/data_memory.vhd:34]
+INFO: [Synth 8-638] synthesizing module 'DiagnoseModule' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/CanFdDiagnoseModule/DiagnoseModule.vhd:57]
+INFO: [Synth 8-6157] synthesizing module 'CanUdpBridge' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/CanFdDiagnoseModule/CanUdpBridge.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/CanFdDiagnoseModule/CanUdpBridge.v:153]
+INFO: [Synth 8-226] default block is never used [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/CanFdDiagnoseModule/CanUdpBridge.v:239]
+INFO: [Synth 8-6155] done synthesizing module 'CanUdpBridge' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/CanFdDiagnoseModule/CanUdpBridge.v:23]
+INFO: [Synth 8-637] synthesizing blackbox instance 'i_FC1001_RMII' of component 'FC1001_RMII' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/CanFdDiagnoseModule/DiagnoseModule.vhd:139]
+INFO: [Synth 8-256] done synthesizing module 'DiagnoseModule' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/CanFdDiagnoseModule/DiagnoseModule.vhd:57]
+INFO: [Synth 8-6157] synthesizing module 'UartDebugger' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/UART_Debug/UartDebugger.v:23]
+INFO: [Synth 8-6157] synthesizing module 'uart' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/UART_Debug/uart.v:23]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/UART_Debug/uart_tx.v:15]
+	Parameter CLKS_PER_BIT bound to: 109 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/UART_Debug/uart_tx.v:15]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/UART_Debug/uart_rx.v:36]
+	Parameter CLKS_PER_BIT bound to: 109 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/UART_Debug/uart_rx.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'uart' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/UART_Debug/uart.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CommandTranslator' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/UART_Debug/CommandTranslator.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CommandTranslator' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/UART_Debug/CommandTranslator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'UWORDsender' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/UART_Debug/UWORDsender.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'UWORDsender' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/UART_Debug/UWORDsender.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Debugger' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/UART_Debug/Debugger.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Debugger' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/UART_Debug/Debugger.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'UartDebugger' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/UART_Debug/UartDebugger.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SevenSegDisplay' [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/Other/SevenSegDisplay.v:24]
+INFO: [Synth 8-226] default block is never used [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/Other/SevenSegDisplay.v:38]
+INFO: [Synth 8-226] default block is never used [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/Other/SevenSegDisplay.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'SevenSegDisplay' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/Other/SevenSegDisplay.v:24]
+INFO: [Synth 8-256] done synthesizing module 'RiscDiag_CanFd' (0#1) [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscDiag_CanFd.vhd:46]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[1].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[2].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[3].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[4].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[5].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[6].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[7].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[8].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[9].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[0].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized1' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[1].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized1' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[2].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized1' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[3].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized1' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[4].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized1' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[5].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized1' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[6].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized1' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[7].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized1' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[8].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized1' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[9].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized1' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[10].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized1' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[0].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized9' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[1].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized9' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[2].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized9' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[3].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized9' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[4].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized9' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[5].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized9' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[7].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized9' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[8].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized9' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[9].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized9' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[10].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized9' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[11].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized9' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[13].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized9' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[14].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized9' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[15].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized9' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[16].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized9' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[17].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized9' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[19].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized9' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[20].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized9' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[21].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized9' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[22].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized9' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[23].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized9' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[24].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized9' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[25].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized9' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[26].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized9' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[27].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized9' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[28].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized9' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[29].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized9' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[30].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized9' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[31].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized9' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[0].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized15' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[1].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized15' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[2].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized15' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[3].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized15' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[4].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized15' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[5].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized15' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[6].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized15' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[7].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized15' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[8].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized15' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[0].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized19' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[8].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized21' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[9].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized21' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[10].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized21' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[11].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized21' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[12].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized21' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[13].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized21' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[14].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized21' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[15].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized21' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[0].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized23' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[1].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized23' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[2].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized23' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[4].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized23' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[5].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized23' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[6].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized23' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[8].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized23' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[9].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized23' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[10].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized23' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[12].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized23' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[13].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized23' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[14].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized23' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[16].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized23' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[17].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized23' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[18].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized23' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[20].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized23' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[21].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized23' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[22].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized23' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[24].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized23' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[25].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized23' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[26].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized23' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[28].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized23' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[29].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized23' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[30].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized23' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[0].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized25' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[1].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized25' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[2].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized25' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[3].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized25' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[4].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized25' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[5].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized25' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[6].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized25' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[7].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized25' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'bit_gen[8].reg_present_gen.reg_regular_gen.reg_value_r_reg' in module 'memory_reg__parameterized25' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/memory_registers/generated/memory_reg.vhd:168]
+INFO: [Common 17-14] Message 'Synth 8-6426' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3936] Found unconnected internal register 'data_length_c_reg' and it is trimmed from '7' to '6' bits. [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/CTU_CAN_FD/can_core/protocol_control_fsm.vhd:946]
+WARNING: [Synth 8-6014] Unused sequential element frame_content_reg[0] was removed.  [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RiscV_Modules/canfd_unit.v:407]
+WARNING: [Synth 8-6014] Unused sequential element frame_content_reg[1] was removed.  [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RiscV_Modules/canfd_unit.v:407]
+WARNING: [Synth 8-6014] Unused sequential element frame_content_reg[2] was removed.  [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RiscV_Modules/canfd_unit.v:407]
+WARNING: [Synth 8-6014] Unused sequential element frame_content_reg[3] was removed.  [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RiscV_Modules/canfd_unit.v:407]
+WARNING: [Synth 8-6014] Unused sequential element frame_content_reg[4] was removed.  [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RiscV_Modules/canfd_unit.v:407]
+WARNING: [Synth 8-6014] Unused sequential element frame_content_reg[5] was removed.  [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RiscV_Modules/canfd_unit.v:407]
+WARNING: [Synth 8-6014] Unused sequential element frame_content_reg[6] was removed.  [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RiscV_Modules/canfd_unit.v:407]
+WARNING: [Synth 8-6014] Unused sequential element frame_content_reg[7] was removed.  [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RiscV_Modules/canfd_unit.v:407]
+WARNING: [Synth 8-6014] Unused sequential element frame_content_reg[8] was removed.  [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RiscV_Modules/canfd_unit.v:407]
+WARNING: [Synth 8-6014] Unused sequential element frame_content_reg[9] was removed.  [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RiscV_Modules/canfd_unit.v:407]
+WARNING: [Synth 8-6014] Unused sequential element frame_content_reg[10] was removed.  [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RiscV_Modules/canfd_unit.v:407]
+WARNING: [Synth 8-6014] Unused sequential element frame_content_reg[11] was removed.  [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RiscV_Modules/canfd_unit.v:407]
+WARNING: [Synth 8-6014] Unused sequential element frame_content_reg[12] was removed.  [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RiscV_Modules/canfd_unit.v:407]
+WARNING: [Synth 8-6014] Unused sequential element frame_content_reg[13] was removed.  [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RiscV_Modules/canfd_unit.v:407]
+WARNING: [Synth 8-6014] Unused sequential element frame_content_reg[14] was removed.  [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RiscV_Modules/canfd_unit.v:407]
+WARNING: [Synth 8-6014] Unused sequential element frame_content_reg[15] was removed.  [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RiscV_Modules/canfd_unit.v:407]
+WARNING: [Synth 8-6014] Unused sequential element frame_content_reg[16] was removed.  [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RiscV_Modules/canfd_unit.v:407]
+WARNING: [Synth 8-6014] Unused sequential element frame_content_reg[17] was removed.  [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RiscV_Modules/canfd_unit.v:407]
+WARNING: [Synth 8-6014] Unused sequential element frame_content_reg[18] was removed.  [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RiscV_Modules/canfd_unit.v:407]
+WARNING: [Synth 8-6014] Unused sequential element frame_content_reg[19] was removed.  [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RiscV_Modules/canfd_unit.v:407]
+WARNING: [Synth 8-6014] Unused sequential element frame_content_reg[20] was removed.  [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RiscV_Modules/canfd_unit.v:407]
+WARNING: [Synth 8-6014] Unused sequential element id_ex_reg_reg[control_mem_read] was removed.  [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RisCanFdCPU.vhd:263]
+WARNING: [Synth 8-6014] Unused sequential element ex_mem_reg_reg[control_mem_read] was removed.  [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RisCanFdCPU.vhd:264]
+WARNING: [Synth 8-6014] Unused sequential element rd1_reg was removed.  [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/CanFdDiagnoseModule/CanUdpBridge.v:76]
+WARNING: [Synth 8-6014] Unused sequential element tms_reg was removed.  [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/CanFdDiagnoseModule/CanUdpBridge.v:78]
+WARNING: [Synth 8-6014] Unused sequential element inc_reg was removed.  [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/CanFdDiagnoseModule/CanUdpBridge.v:158]
+WARNING: [Synth 8-6014] Unused sequential element started_reg was removed.  [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/UART_Debug/CommandTranslator.v:54]
+WARNING: [Synth 8-6014] Unused sequential element BytesReceived_reg[7] was removed.  [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/UART_Debug/CommandTranslator.v:57]
+WARNING: [Synth 8-7129] Port UDP0_Connected in module CanUdpBridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port UDP0_TxReady in module CanUdpBridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port UDP0_RxData[7] in module CanUdpBridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port UDP0_RxData[6] in module CanUdpBridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port UDP0_RxData[5] in module CanUdpBridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port UDP0_RxData[4] in module CanUdpBridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port UDP0_RxData[3] in module CanUdpBridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port UDP0_RxData[2] in module CanUdpBridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port UDP0_RxData[1] in module CanUdpBridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port UDP0_RxData[0] in module CanUdpBridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port UDP0_RxValid in module CanUdpBridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port UDP0_RxLast in module CanUdpBridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[1] in module program_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[0] in module program_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[1023] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[1022] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[1021] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[1020] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[1019] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[1018] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[1017] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[1016] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[1015] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[1014] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[1013] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[1012] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[1011] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[1010] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[1009] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[1008] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[1007] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[1006] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[1005] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[1004] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[1003] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[1002] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[1001] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[1000] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[999] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[998] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[997] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[996] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[995] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[994] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[993] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[992] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[991] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[990] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[989] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[988] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[987] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[986] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[985] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[984] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[983] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[982] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[981] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[980] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[979] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[978] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[977] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[976] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[975] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[974] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[973] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[972] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[971] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[970] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[969] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[968] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[967] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[966] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[965] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[964] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[963] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[962] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[961] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[960] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[959] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[958] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[957] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[956] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[955] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[954] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[953] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[952] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[951] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[950] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[949] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[948] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[947] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[946] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[945] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[944] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[943] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[942] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[941] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[940] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[939] in module bus_sampling is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drv_bus[938] in module bus_sampling is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1391.277 ; gain = 97.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1391.277 ; gain = 97.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1391.277 ; gain = 97.535
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.276 . Memory (MB): peak = 1391.277 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/constrs_1/imports/RiscDiagCanFd_Srcs/constraints.xdc]
+Finished Parsing XDC File [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/constrs_1/imports/RiscDiagCanFd_Srcs/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/constrs_1/imports/RiscDiagCanFd_Srcs/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/RiscDiag_CanFd_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/RiscDiag_CanFd_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1486.316 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 1486.316 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1486.316 ; gain = 192.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1486.316 ; gain = 192.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1486.316 ; gain = 192.574
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'rx_buffer_fsm'
+INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'txt_buffer_fsm'
+INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'txt_buffer_fsm__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'tx_arbitrator_fsm'
+INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'operation_control'
+INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'fault_confinement_fsm'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'bit_time_fsm'
+WARNING: [Synth 8-3936] Found unconnected internal register 'payload_addr_reg' and it is trimmed from '32' to '16' bits. [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/RiscCanFd_CPU/RiscV_Modules/canfd_unit.v:651]
+INFO: [Synth 8-802] inferred FSM for state register 'r_SM_Main_reg' in module 'uart_tx'
+WARNING: [Synth 8-3936] Found unconnected internal register 'byte0_reg' and it is trimmed from '32' to '8' bits. [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/UART_Debug/UWORDsender.v:169]
+WARNING: [Synth 8-3936] Found unconnected internal register 'byte1_reg' and it is trimmed from '32' to '8' bits. [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/UART_Debug/UWORDsender.v:168]
+WARNING: [Synth 8-3936] Found unconnected internal register 'byte2_reg' and it is trimmed from '32' to '8' bits. [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/UART_Debug/UWORDsender.v:167]
+WARNING: [Synth 8-3936] Found unconnected internal register 'byte3_reg' and it is trimmed from '32' to '8' bits. [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/UART_Debug/UWORDsender.v:166]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              s_rxb_idle |                              000 |                              000
+s_rxb_store_frame_format |                              001 |                              001
+  s_rxb_store_identifier |                              010 |                              010
+       s_rxb_skip_ts_low |                              011 |                              011
+      s_rxb_skip_ts_high |                              100 |                              100
+        s_rxb_store_data |                              101 |                              111
+  s_rxb_store_end_ts_low |                              110 |                              101
+ s_rxb_store_end_ts_high |                              111 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'sequential' in module 'rx_buffer_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             s_txt_empty |                              000 |                              000
+            s_txt_failed |                              101 |                              101
+             s_txt_ready |                              001 |                              001
+           s_txt_tx_prog |                              011 |                              010
+           s_txt_ab_prog |                              010 |                              011
+                s_txt_ok |                              110 |                              100
+           s_txt_aborted |                              100 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'sequential' in module 'txt_buffer_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             s_txt_empty |                              000 |                              000
+            s_txt_failed |                              101 |                              101
+             s_txt_ready |                              001 |                              001
+           s_txt_tx_prog |                              011 |                              010
+           s_txt_ab_prog |                              010 |                              011
+                s_txt_ok |                              110 |                              100
+           s_txt_aborted |                              100 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'sequential' in module 'txt_buffer_fsm__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+        s_arb_sel_low_ts |                              000 |                              001
+        s_arb_sel_upp_ts |                              001 |                              010
+           s_arb_sel_ffw |                              010 |                              011
+           s_arb_sel_idw |                              011 |                              100
+         s_arb_validated |                              100 |                              101
+            s_arb_locked |                              101 |                              110
+              s_arb_idle |                              110 |                              000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'sequential' in module 'tx_arbitrator_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                s_oc_off |                               00 |                               00
+               s_oc_idle |                               01 |                               01
+           s_oc_receiver |                               10 |                               11
+        s_oc_transmitter |                               11 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'sequential' in module 'operation_control'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            s_fc_bus_off |                               00 |                               10
+         s_fc_err_active |                               01 |                               00
+        s_fc_err_passive |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'sequential' in module 'fault_confinement_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              s_bt_reset |                              001 |                               10
+              s_bt_tseg1 |                              010 |                               00
+              s_bt_tseg2 |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'bit_time_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_IDLE |                              000 |                              000
+          s_TX_START_BIT |                              001 |                              001
+          s_TX_DATA_BITS |                              010 |                              010
+           s_TX_STOP_BIT |                              011 |                              011
+               s_CLEANUP |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_SM_Main_reg' using encoding 'sequential' in module 'uart_tx'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1486.316 ; gain = 192.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 3     
+	   2 Input   15 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 5     
+	   2 Input   11 Bit       Adders := 4     
+	   2 Input   10 Bit       Adders := 3     
+	   2 Input    9 Bit       Adders := 9     
+	   3 Input    9 Bit       Adders := 2     
+	   3 Input    8 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 4     
+	   2 Input    7 Bit       Adders := 3     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 5     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 10    
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input     21 Bit         XORs := 1     
+	   2 Input     17 Bit         XORs := 1     
+	   2 Input     15 Bit         XORs := 1     
+	   3 Input      1 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 61    
+	               29 Bit    Registers := 2     
+	               21 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 8     
+	               15 Bit    Registers := 2     
+	               12 Bit    Registers := 5     
+	               11 Bit    Registers := 4     
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 7     
+	                8 Bit    Registers := 115   
+	                7 Bit    Registers := 7     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 18    
+	                4 Bit    Registers := 10    
+	                3 Bit    Registers := 11    
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 266   
++---RAMs : 
+	              64K Bit	(2048 X 32 bit)          RAMs := 1     
+	              640 Bit	(20 X 32 bit)          RAMs := 2     
++---Muxes : 
+	   2 Input   39 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 121   
+	  27 Input   32 Bit        Muxes := 1     
+	  14 Input   32 Bit        Muxes := 1     
+	   8 Input   32 Bit        Muxes := 4     
+	   4 Input   32 Bit        Muxes := 2     
+	   2 Input   21 Bit        Muxes := 4     
+	   2 Input   17 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 38    
+	  27 Input   16 Bit        Muxes := 1     
+	   6 Input   16 Bit        Muxes := 1     
+	   8 Input   16 Bit        Muxes := 2     
+	   2 Input   15 Bit        Muxes := 4     
+	   2 Input   12 Bit        Muxes := 13    
+	  27 Input   12 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 18    
+	  39 Input    9 Bit        Muxes := 1     
+	   3 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 15    
+	   4 Input    8 Bit        Muxes := 1     
+	   6 Input    8 Bit        Muxes := 1     
+	  14 Input    8 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 2     
+	   9 Input    7 Bit        Muxes := 3     
+	   2 Input    7 Bit        Muxes := 5     
+	   7 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 6     
+	   3 Input    6 Bit        Muxes := 2     
+	   8 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 22    
+	  18 Input    5 Bit        Muxes := 1     
+	   3 Input    5 Bit        Muxes := 2     
+	  39 Input    5 Bit        Muxes := 2     
+	  40 Input    5 Bit        Muxes := 1     
+	   5 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 21    
+	   7 Input    4 Bit        Muxes := 2     
+	   4 Input    4 Bit        Muxes := 2     
+	   3 Input    4 Bit        Muxes := 4     
+	  27 Input    4 Bit        Muxes := 1     
+	  23 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 91    
+	   8 Input    3 Bit        Muxes := 5     
+	   3 Input    3 Bit        Muxes := 4     
+	   4 Input    3 Bit        Muxes := 6     
+	   7 Input    3 Bit        Muxes := 9     
+	  29 Input    3 Bit        Muxes := 2     
+	  30 Input    3 Bit        Muxes := 1     
+	  40 Input    3 Bit        Muxes := 1     
+	  39 Input    3 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 1     
+	  27 Input    3 Bit        Muxes := 1     
+	  11 Input    3 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 41    
+	  39 Input    2 Bit        Muxes := 4     
+	   3 Input    2 Bit        Muxes := 6     
+	   4 Input    2 Bit        Muxes := 4     
+	   7 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 444   
+	   4 Input    1 Bit        Muxes := 49    
+	   8 Input    1 Bit        Muxes := 12    
+	   3 Input    1 Bit        Muxes := 16    
+	   7 Input    1 Bit        Muxes := 10    
+	  39 Input    1 Bit        Muxes := 64    
+	   5 Input    1 Bit        Muxes := 11    
+	   6 Input    1 Bit        Muxes := 4     
+	  27 Input    1 Bit        Muxes := 6     
+	  26 Input    1 Bit        Muxes := 1     
+	  40 Input    1 Bit        Muxes := 5     
+	  22 Input    1 Bit        Muxes := 1     
+	  24 Input    1 Bit        Muxes := 20    
+	  23 Input    1 Bit        Muxes := 5     
+	  14 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:29 ; elapsed = 00:01:31 . Memory (MB): peak = 1540.512 ; gain = 246.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++---------------------+----------------------------------------------------+---------------+----------------+
+|Module Name          | RTL Object                                         | Depth x Width | Implemented As | 
++---------------------+----------------------------------------------------+---------------+----------------+
+|protocol_control_fsm | bit_err_disable_receiver                           | 64x1          | LUT            | 
+|canfd_unit           | datamem_write_en                                   | 32x1          | LUT            | 
+|canfd_unit           | udpmem_write_en                                    | 32x1          | LUT            | 
+|canfd_unit           | scs                                                | 32x1          | LUT            | 
+|canfd_unit           | swr                                                | 32x1          | LUT            | 
+|canfd_unit           | sbe                                                | 32x4          | LUT            | 
+|protocol_control     | protocol_control_fsm_inst/bit_err_disable_receiver | 64x1          | LUT            | 
+|RiscDiag_CanFd       | datamem_write_en                                   | 32x1          | LUT            | 
+|RiscDiag_CanFd       | udpmem_write_en                                    | 32x1          | LUT            | 
+|RiscDiag_CanFd       | scs                                                | 32x1          | LUT            | 
+|RiscDiag_CanFd       | swr                                                | 32x1          | LUT            | 
+|RiscDiag_CanFd       | sbe                                                | 32x4          | LUT            | 
++---------------------+----------------------------------------------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping Report (see note below)
++-----------------------------------------------------------------------+---------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                                            | RTL Object                                        | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------------------------------------------------------------+---------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|canfdctrli_6/rx_buffer_inst                                            | rx_buffer_ram_inst/rx_buf_RAM_inst/ram_memory_reg | 2 K x 32(READ_FIRST)   | W |   | 2 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 2      | 
+|canfdctrli_6/\txt_buf_comp_gen[0].txt_buffer_inst/txt_buffer_ram_inst  | txt_buf_ram_inst/ram_memory_reg                   | 20 x 32(READ_FIRST)    | W |   | 20 x 32(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|canfdctrli_6/\txt_buf_comp_gen[1].txt_buffer_inst/txt_buffer_ram_inst  | txt_buf_ram_inst/ram_memory_reg                   | 20 x 32(READ_FIRST)    | W |   | 20 x 32(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++-----------------------------------------------------------------------+---------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++---------------+------------------------+-----------+----------------------+----------------+
+|Module Name    | RTL Object             | Inference | Size (Depth x Width) | Primitives     | 
++---------------+------------------------+-----------+----------------------+----------------+
+|RiscDiag_CanFd | Program_Memory/ram_reg | Implied   | 4 K x 32             | RAM64M x 1408  | 
+|RiscDiag_CanFd | Data_Memory/ram_reg    | Implied   | 4 K x 32             | RAM64M x 2112  | 
++---------------+------------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:34 ; elapsed = 00:01:37 . Memory (MB): peak = 1540.512 ; gain = 246.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:00 ; elapsed = 00:02:03 . Memory (MB): peak = 1613.602 ; gain = 319.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++-----------------------------------------------------------------------+---------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                                            | RTL Object                                        | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------------------------------------------------------------+---------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|canfdctrli_6/rx_buffer_inst                                            | rx_buffer_ram_inst/rx_buf_RAM_inst/ram_memory_reg | 2 K x 32(READ_FIRST)   | W |   | 2 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 2      | 
+|canfdctrli_6/\txt_buf_comp_gen[0].txt_buffer_inst/txt_buffer_ram_inst  | txt_buf_ram_inst/ram_memory_reg                   | 20 x 32(READ_FIRST)    | W |   | 20 x 32(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|canfdctrli_6/\txt_buf_comp_gen[1].txt_buffer_inst/txt_buffer_ram_inst  | txt_buf_ram_inst/ram_memory_reg                   | 20 x 32(READ_FIRST)    | W |   | 20 x 32(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++-----------------------------------------------------------------------+---------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping Report
++---------------+------------------------+-----------+----------------------+----------------+
+|Module Name    | RTL Object             | Inference | Size (Depth x Width) | Primitives     | 
++---------------+------------------------+-----------+----------------------+----------------+
+|RiscDiag_CanFd | Program_Memory/ram_reg | Implied   | 4 K x 32             | RAM64M x 1408  | 
+|RiscDiag_CanFd | Data_Memory/ram_reg    | Implied   | 4 K x 32             | RAM64M x 2112  | 
++---------------+------------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance RiscCanFd_CPU/cfd_unit/canfdctrl/rx_buffer_inst/rx_buffer_ram_inst/rx_buf_RAM_inst/ram_memory_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance RiscCanFd_CPU/cfd_unit/canfdctrl/rx_buffer_inst/rx_buffer_ram_inst/rx_buf_RAM_inst/ram_memory_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance RiscCanFd_CPU/cfd_unit/canfdctrl/txt_buf_comp_gen[0].txt_buffer_inst/txt_buffer_ram_inst/txt_buf_ram_inst/ram_memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance RiscCanFd_CPU/cfd_unit/canfdctrl/txt_buf_comp_gen[1].txt_buffer_inst/txt_buffer_ram_inst/txt_buf_ram_inst/ram_memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:06 ; elapsed = 00:02:09 . Memory (MB): peak = 1613.602 ; gain = 319.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:12 ; elapsed = 00:02:15 . Memory (MB): peak = 1613.602 ; gain = 319.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:12 ; elapsed = 00:02:15 . Memory (MB): peak = 1613.602 ; gain = 319.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:14 ; elapsed = 00:02:17 . Memory (MB): peak = 1613.602 ; gain = 319.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:14 ; elapsed = 00:02:17 . Memory (MB): peak = 1613.602 ; gain = 319.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:15 ; elapsed = 00:02:18 . Memory (MB): peak = 1613.602 ; gain = 319.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:15 ; elapsed = 00:02:18 . Memory (MB): peak = 1613.602 ; gain = 319.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |FC1001_RMII   |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |FC1001_RMII_bbox |     1|
+|2     |BUFG             |     1|
+|3     |CARRY4           |   177|
+|4     |LUT1             |    45|
+|5     |LUT2             |   397|
+|6     |LUT3             |   651|
+|7     |LUT4             |   721|
+|8     |LUT5             |   922|
+|9     |LUT6             |  4290|
+|10    |MUXF7            |  1287|
+|11    |MUXF8            |   576|
+|12    |RAM64M           |  2299|
+|13    |RAMB18E1         |     2|
+|14    |RAMB36E1         |     2|
+|15    |FDCE             |  1019|
+|16    |FDPE             |    95|
+|17    |FDRE             |  3324|
+|18    |FDSE             |    12|
+|19    |IBUF             |     8|
+|20    |OBUF             |    40|
++------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:15 ; elapsed = 00:02:18 . Memory (MB): peak = 1613.602 ; gain = 319.859
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:00 ; elapsed = 00:02:13 . Memory (MB): peak = 1613.602 ; gain = 224.820
+Synthesis Optimization Complete : Time (s): cpu = 00:02:15 ; elapsed = 00:02:18 . Memory (MB): peak = 1613.602 ; gain = 319.859
+INFO: [Project 1-571] Translating synthesized netlist
+Parsing EDIF File [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/CanFdDiagnoseModule/FC1001_RMII.edn]
+Finished Parsing EDIF File [C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.srcs/sources_1/imports/zRepo/RiscDiagCanFd_Srcs/CanFdDiagnoseModule/FC1001_RMII.edn]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.335 . Memory (MB): peak = 1613.602 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4535 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1613.602 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2299 instances were transformed.
+  RAM64M => RAM64M (RAMD64E(x4)): 2299 instances
+
+Synth Design complete, checksum: d15ba6ee
+INFO: [Common 17-83] Releasing license: Synthesis
+312 Infos, 246 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:25 ; elapsed = 00:02:29 . Memory (MB): peak = 1613.602 ; gain = 319.859
+INFO: [Common 17-1381] The checkpoint 'C:/Users/cosmi/RiscDiag_CanFd_Repo/RiscDiagCanFd/RiscDiagCanFd.runs/synth_1/RiscDiag_CanFd.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file RiscDiag_CanFd_utilization_synth.rpt -pb RiscDiag_CanFd_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 11 20:23:30 2022...
